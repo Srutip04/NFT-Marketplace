@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import { BaseLayout, NftList } from "../components";
+import nfts from "../content/meta.json";
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
               Mint a NFT to get unlimited ownership forever!
             </p>
           </div>
-          <NftList />
+          <NftList nfts={nfts} />
         </div>
       </div>
     </BaseLayout>
