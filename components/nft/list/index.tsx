@@ -1,8 +1,9 @@
 import { FunctionComponent } from "react";
 import NftItem from "../item";
+import { NftMeta } from "../../../types/nft";
 
 type NftListProps = {
-  nfts: any[];
+  nfts: NftMeta[];
 };
 
 
